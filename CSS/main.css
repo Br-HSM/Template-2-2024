@@ -770,19 +770,33 @@ header nav i {
 
 /* pricing */
 .pricing {
-    margin: 2rem 6rem;
+    margin: 2rem 1rem;
 }
+
+
 
 .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill,minmax(16rem,1fr));
+    display: flex;
     gap: 1rem;
-    margin-top: 3rem;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-
 
 .box-container .box{
     text-align: center;
+    flex-basis: 20%;
+}
+
+@media only screen and (max-width:800px) {
+    .box-container .box{
+        flex-basis: 40%;
+    }
+}
+
+@media only screen and (max-width:800px) {
+    .box-container .box{
+        flex-basis: 80%;
+    }
 }
 
 .box-container .box h3 {
