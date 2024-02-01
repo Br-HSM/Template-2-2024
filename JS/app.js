@@ -10,6 +10,8 @@ const observeEL = new IntersectionObserver((element) => {
     });
 });
 
+
+
 const hiddenEL = document.querySelectorAll(".hidden");
 
 hiddenEL.forEach((EL) => observeEL.observe(EL));
